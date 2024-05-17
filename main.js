@@ -99,7 +99,7 @@ container.addEventListener('drop', e => {
         dragged.index > droppedIndex ? obj.before(dragged.el) : obj.after(dragged.el);
         isLast ? originPlace.after(obj) : originPlace.before(obj)
     }
-    
+    checkStatus();
 })
 
 startButton.addEventListener('click',() =>{
